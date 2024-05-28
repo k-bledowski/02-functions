@@ -13,7 +13,7 @@
  * 3. Convert both minutes and seconds to strings, padding them with a leading zero if they are less than 10.
  * 4. Concatenate minutes and seconds with a colon (:) to form the time string.
  */
-let formatTime = (seconds) => {
+export let formatTime = (seconds) => {
     let min = Math.floor(seconds / 60)
       .toString()
       .padStart(2, "0")
